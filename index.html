@@ -2,76 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>The Constantinus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <title>Карточка студента</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <img src="photo.jpg" alt="Фото" width="200" />
-        </td>
-        <td>
-          <h1>Константин Зятиков</h1>
-          <p><em>Я учусь на специальность Junior Frontend Developer</em></p>
-          <p>Я люблю созидать и заниматься творчеством</p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-      <li>
-        <a target="_blank" href="https://vk.com/justbehappyman">VKontakte</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://t.me/TheConstantinus">Telegram</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/JustBeHappyMan">GitHub</a>
-      </li>
-    </ul>
-    <hr />
-    <h2>Мои хобби</h2>
-    <ol type="1">
-      <li>Велосипед</li>
-      <li>Программирование</li>
-      <li>Английский язык</li>
-      <li>Музыка</li>
-    </ol>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Годы работы</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ЗАО Тяжпромэлектромет</td>
-          <td>Инженер АСУ</td>
-          <td>2013-2016</td>
-        </tr>
-        <tr>
-          <td>МУ МВД России Нижнетагильское</td>
-          <td>Старший инженер</td>
-          <td>2017-2022</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя..." />
-      <br />
-      <label for="email">Ваш Email:</label>
-      <input type="text" id="email" placeholder="Введите email..." />
-      <br />
-      <label for="message">Ваше сообщение:</label>
-      <textarea id="message" rows="2" cols="25"></textarea>
-      <br />
-      <input type="submit" value="Связаться" />
-    </form>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Карточка студента</h1>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="about">
+            <div class="about__img">
+              <img class="img" src="photo.jpg" alt="" />
+            </div>
+            <div class="about__text">
+              <p class="label">Имя, фамилия:</p>
+              <p class="text">Константин Зятиков</p>
+              <p class="label">Возраст:</p>
+              <p class="text">31</p>
+              <p class="label">Опыт в программировании:</p>
+              <p class="text">Около года + 5 лет учёбы на программиста (2007 - 2012)</p>
+              <p class="label">О себе:</p>
+              <p class="text">Никогда не поздно все изменить...</p>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Мои цели на обучение</h2>
+          <ul class="section__list">
+            <li><i class="fas fa-check"></i>Изучить стек технологий для современной Frontend-разработки: JavaScript, NodeJS, React, TypeScript, Webpack</li>
+            <li><i class="fas fa-check"></i>Научиться работать в команде разработчиков, "прокачаться" на GitHub</li>
+            <li><i class="fas fa-check"></i>Создать автоматизированную систему для автоматизации процессов на текущем месте работы</li>
+            <li><i class="fas fa-check"></i>Получить свой первый Job offer в сфере Frontend-разработки</li>
+            <li><i class="fas fa-check"></i>Изменить свою жизнь</li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Сколько времени смогу учиться</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Понедельник</td>
+                <td><i class="far fa-clock"></i>2-3 ч.</td>
+              </tr>
+              <tr>
+                <td>Вторник</td>
+                <td><i class="far fa-clock"></i>2-3 ч.</td>
+              </tr>
+              <tr>
+                <td>Среда</td>
+                <td><i class="far fa-clock"></i>2-3 ч.</td>
+              </tr>
+              <tr>
+                <td>Четверг</td>
+                <td><i class="far fa-clock"></i>2-3 ч.</td>
+              </tr>
+              <tr>
+                <td>Пятница</td>
+                <td><i class="far fa-clock"></i>2-3 ч.</td>
+              </tr>
+              <tr>
+                <td>Суббота</td>
+                <td><i class="far fa-clock"></i>4-5 ч.</td>
+              </tr>
+              <tr>
+                <td>Воскресенье</td>
+                <td><i class="far fa-clock"></i>4-5 ч.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Мои пройденные курсы</h2>
+          <table class="table table-centered table-bordered">
+            <thead>
+              <tr>
+                <td>Название</td>
+                <td>Автор</td>
+                <td>Оценка курса</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Константин Зятиков</td>
+                <td>10/10</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Константин Зятиков</td>
+                <td>10/10</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="section">
+          <h2 class="section__title">Контакты</h2>
+          <div class="socials">
+            <div class="socials__item">
+              <a href="https://t.me/TheConstantinus">
+                <i class="fab fa-telegram-plane"></i>
+                <p>Telegram</p>
+              </a>
+            </div>
+            <div class="socials__item">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+              </a>
+            </div>
+            <div class="socials__item">
+              <a href="https://github.com/JustBeHappyMan">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+              </a>
+            </div>
+            <div class="socials__item">
+              <a href="https://vk.com/justbehappyman">
+                <i class="fab fa-vk"></i>
+                <p>VKontakte</p>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
