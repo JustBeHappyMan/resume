@@ -1,2 +1,2 @@
-# resume
-My first site
+# Lesson 10
+Student's card
