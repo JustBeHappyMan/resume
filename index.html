@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,32 +13,44 @@
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+
     <title>Карточка студента</title>
   </head>
+
   <body>
-    <div class="container">
+    <div class="wrapper">
+
       <header class="header">
         <h1 class="header__title">Карточка студента</h1>
       </header>
+
       <main class="main">
         <section class="section">
           <div class="about">
+
             <div class="about__img">
               <img class="img" src="https://i.yapx.ru/SnCGg.jpg" alt="Фото профиля" />
             </div>
+
             <div class="about__text">
-              <p class="label">Имя, фамилия:</p>
-              <p class="text">Константин Зятиков</p>
-              <p class="label">Возраст:</p>
-              <p class="text">31</p>
-              <p class="label">Опыт в программировании:</p>
-              <p class="text">Около года + 5 лет учёбы на программиста (2007 - 2012)</p>
-              <p class="label">О себе:</p>
-              <p class="text">Никогда не поздно все изменить...</p>
+              <p class="about__text-header">Имя, фамилия:</p>
+              <p class="about__text-p">Константин Зятиков</p>
+              <p class="about__text-header">Возраст:</p>
+              <p class="about__text-p">31</p>
+              <p class="about__text-header">Опыт в программировании:</p>
+              <p class="about__text-p">Около года + 5 лет учёбы на программиста (2007 - 2012)</p>
+              <p class="about__text-header">О себе:</p>
+              <p class="about__text-p">Никогда не поздно все изменить...</p>
             </div>
+
           </div>
+
         </section>
         <section class="section">
+
           <h2 class="section__title">Мои цели на обучение</h2>
           <ul class="section__list">
             <li><i class="fas fa-check"></i>Изучить стек технологий для современной Frontend-разработки: JavaScript, NodeJS, React, TypeScript, Webpack</li>
