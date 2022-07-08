@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Карточка студента</title>
@@ -22,17 +22,19 @@
 
   <body>
     <div class="wrapper">
-
       <header class="header">
         <h1 class="header__title">Карточка студента</h1>
       </header>
 
       <main class="main">
-        <section class="section">
+        <section class="section" name="about">
           <div class="about">
-
             <div class="about__img">
-              <img class="img" src="https://i.yapx.ru/SnCGg.jpg" alt="Фото профиля" />
+              <img
+                class="img"
+                src="https://i.yapx.ru/SnCGg.jpg"
+                alt="Фото профиля"
+              />
             </div>
 
             <div class="about__text">
@@ -41,81 +43,105 @@
               <p class="about__text-header">Возраст:</p>
               <p class="about__text-p">31</p>
               <p class="about__text-header">Опыт в программировании:</p>
-              <p class="about__text-p">Около года + 5 лет учёбы на программиста (2007 - 2012)</p>
+              <p class="about__text-p">
+                Около года + 5 лет учёбы на программиста (2007 - 2012)
+              </p>
               <p class="about__text-header">О себе:</p>
               <p class="about__text-p">Никогда не поздно все изменить...</p>
             </div>
-
           </div>
-
         </section>
-        <section class="section">
-
+        <section class="section" name="goals">
           <h2 class="section__title">Мои цели на обучение</h2>
           <ul class="section__list">
-            <li><i class="fas fa-check"></i>Изучить стек технологий для современной Frontend-разработки: JavaScript, NodeJS, React, TypeScript, Webpack</li>
-            <li><i class="fas fa-check"></i>Научиться работать в команде разработчиков, "прокачаться" на GitHub</li>
-            <li><i class="fas fa-check"></i>Создать информационую систему на основе JS для автоматизации процессов на текущем месте работы</li>
-            <li><i class="fas fa-check"></i>Получить свой первый Job offer в сфере Frontend-разработки</li>
+            <li>
+              <i class="fas fa-check"></i>Изучить стек технологий для
+              современной Frontend-разработки: JavaScript, NodeJS, React,
+              TypeScript, Webpack
+            </li>
+            <li>
+              <i class="fas fa-check"></i>Научиться работать в команде
+              разработчиков, "прокачаться" на GitHub
+            </li>
+            <li>
+              <i class="fas fa-check"></i>Создать информационую систему на
+              основе JS для автоматизации процессов на текущем месте работы
+            </li>
+            <li>
+              <i class="fas fa-check"></i>Получить свой первый Job offer в сфере
+              Frontend-разработки
+            </li>
             <li><i class="fas fa-check"></i>Изменить свою жизнь</li>
           </ul>
         </section>
-        <section class="section">
+        <section class="section" name="studies">
           <h2 class="section__title">Сколько времени смогу учиться</h2>
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>Понедельник</td>
-                <td><i class="far fa-clock"></i>2-3 ч.</td>
-              </tr>
-              <tr>
-                <td>Вторник</td>
-                <td><i class="far fa-clock"></i>2-3 ч.</td>
-              </tr>
-              <tr>
-                <td>Среда</td>
-                <td><i class="far fa-clock"></i>2-3 ч.</td>
-              </tr>
-              <tr>
-                <td>Четверг</td>
-                <td><i class="far fa-clock"></i>2-3 ч.</td>
-              </tr>
-              <tr>
-                <td>Пятница</td>
-                <td><i class="far fa-clock"></i>2-3 ч.</td>
-              </tr>
-              <tr>
-                <td>Суббота</td>
-                <td><i class="far fa-clock"></i>4-5 ч.</td>
-              </tr>
-              <tr>
-                <td>Воскресенье</td>
-                <td><i class="far fa-clock"></i>4-5 ч.</td>
-              </tr>
-            </tbody>
-          </table>
+          <ul class="list">
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Понедельник</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>2-3 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Вторник</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>2-3 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Среда</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>2-3 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Четверг</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>2-3 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Пятница</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>2-3 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Суббота</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>4-5 ч.
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="list__cell list__cell-align-left">Воскресенье</span>
+              <span class="list__cell">
+                <i class="far fa-clock"></i>4-5 ч.
+              </span>
+            </li>
+          </ul>
         </section>
-        <section class="section">
+        <section class="section" name="courses">
           <h2 class="section__title">Мои пройденные курсы</h2>
           <ul class="list">
-            <li>
-              <span>Название</span>
-              <span>Автор</span>
-              <span>Оценка курса</span>
+            <li class="list__item">
+              <span class="list__cell list__cell-header">Название</span>
+              <span class="list__cell list__cell-header">Автор</span>
+              <span class="list__cell list__cell-header">Оценка курса</span>
             </li>
-            <li>
-              <span>HTML</span>
-              <span>Владилен Минин</span>
-              <span>10/10</span>            
+            <li class="list__item">
+              <span class="list__cell">HTML</span>
+              <span class="list__cell">Владилен Минин</span>
+              <span class="list__cell">10/10</span>
             </li>
-            <li>
-              <span>CSS</span>
-              <span>Владилен Минин</span>
-              <span>10/10</span>
+            <li class="list__item">
+              <span class="list__cell">CSS</span>
+              <span class="list__cell">Владилен Минин</span>
+              <span class="list__cell">10/10</span>
             </li>
-          </ul>         
+          </ul>
         </section>
-        <section class="section">
+        <section class="section" name="contacts">
           <h2 class="section__title">Контакты</h2>
           <div class="socials">
             <div class="socials__item">
