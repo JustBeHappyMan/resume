@@ -1,4 +1,4 @@
-/* Default settings
+/* Default styles
    ========================================================================== */
 
 /*
@@ -39,9 +39,6 @@
   --width-33pr: 33%;
   --width-25pr: 25%;
 
-  /* Aligns */
-  --div-align-center: 0 auto;
-
   /* Wrapper  settings*/
   --wrapper-width: 1000px;
 
@@ -49,16 +46,43 @@
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.2;
+
   background-color: var(--color-primary);
 }
 
-/* End default settings
+/* End default styles
+   ========================================================================== */
+
+
+
+
+
+/* Wrapper styles
    ========================================================================== */
 
 .wrapper {
   max-width: var(--wrapper-width);
-  margin: var(--div-align-center);
+  margin: 0 auto;
 }
+
+/* Header styles
+   ========================================================================== */
+
+.header {
+  margin: var(--margin-2x) 0;
+}
+
+.header__title {
+  padding: var(--padding-2x) 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  color: var(--color-txt-emphasize);
+  background-color: var(--color-emphasize);
+}
+
+/*  Sections general styles  
+=============================================================================================== */
 
 .section {
   margin: var(--margin-2x) 0;
@@ -79,7 +103,11 @@
   border-bottom-style: var(--border-style);
   border-bottom-color: var(--border-color);
   color: var(--color-txt-primary);
+  text-align: center;
 }
+
+/*  Section "about" styles  
+=============================================================================================== */
 
 .about {
   display: flex;
@@ -105,27 +133,8 @@
   color: var(--color-txt-primary);
 }
 
-.header {
-  margin: var(--margin-2x) 0;
-}
-
-.header__title {
-  padding: var(--padding-2x) 0;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: var(--border-radius);
-  color: var(--color-txt-emphasize);
-  background-color: var(--color-emphasize);
-}
-
-.section__title {
-  text-align: center;
-}
-
-.section__list i {
-  padding-right: var(--padding-1x);
-  color: var(--color-emphasize);
-}
+/*  Section "contacts" styles  
+=============================================================================================== */
 
 .socials {
   display: flex;
@@ -147,33 +156,27 @@
   color: var(--color-emphasize);
 }
 
-.socials__item a {
-  text-decoration: none;
-}
-
-.socials__item a > i {
-  font-size: 3rem;
-  cursor: pointer;
-}
+/*  Lists styles
+=============================================================================================== */
 
 .list {
   display: table;
   margin: 0 auto;
 }
 
-.list > li:first-child {
+.list__cell-header {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--color-emphasize);
 }
 
-.list > li {
+.list__item {
   display: table-row;
-  text-align: center;
 }
 
-.list span {
+.list__cell {
   display: table-cell;
+  text-align: center;
   line-height: 1.6;
   padding: 0 var(--padding-2x);
   border-right-color: var(--color-emphasize); 
@@ -181,6 +184,25 @@
   border-right-width: var(--border-width);
 }
 
-.list span:last-child {
+.list__cell-align-left {
+  text-align: inherit;
+}
+
+.list__cell:last-child {
   border: none;
+}
+
+
+/*  Icons styles  
+=============================================================================================== */
+
+.socials__item a > i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.section__list i,
+.list__cell i {
+  padding-right: var(--padding-1x);
+  color: var(--color-emphasize);
 }
