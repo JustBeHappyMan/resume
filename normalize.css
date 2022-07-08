@@ -148,6 +148,7 @@ sup {
  */
 
 img {
+  display: block;
   border-style: none;
 }
 
@@ -359,6 +360,6 @@ template {
 
 ul[class], 
 ol[class] {
-  padding: inherit;
+  padding-left: 0;
   list-style: none;
 }
