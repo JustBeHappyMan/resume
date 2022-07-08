@@ -232,4 +232,5 @@
   background: var(--color-emphasize);
   border-radius: var(--border-radius);
   font-size: 2rem;
+  cursor: pointer;
 }
