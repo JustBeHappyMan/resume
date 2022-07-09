@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="theme-dark">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
 
@@ -20,14 +20,14 @@
     <title>Карточка студента</title>
   </head>
 
-  <body>
+  <body id="body" class="theme-dark">
     <div class="wrapper">
       <header class="header">
         <h1 class="header__title">Карточка студента</h1>
       </header>
 
       <main class="main">
-        <section class="section" name="about">
+        <section class="section" data-name="about">
           <div class="about">
             <div class="about__img">
                 <img
@@ -51,7 +51,7 @@
             </div>
           </div>
         </section>
-        <section class="section" name="goals">
+        <section class="section" data-name="goals">
           <h2 class="section__title">Мои цели на обучение</h2>
           <ul class="list">
             <li class="list__item">
@@ -76,7 +76,7 @@
             </li>
           </ul>
         </section>
-        <section class="section" name="studies">
+        <section class="section" data-name="studies">
           <h2 class="section__title">Сколько времени смогу учиться</h2>
           <ul class="list list-centered">
             <li class="list__item">
@@ -123,7 +123,7 @@
             </li>
           </ul>
         </section>
-        <section class="section" name="courses">
+        <section class="section" data-name="courses">
           <h2 class="section__title">Мои пройденные курсы</h2>
           <ul class="list list-centered list-bordered">
             <li class="list__item">
@@ -143,7 +143,7 @@
             </li>
           </ul>
         </section>
-        <section class="section" name="contacts">
+        <section class="section" data-name="contacts">
           <h2 class="section__title">Контакты</h2>
           <div class="socials">
             <div class="socials__item">
@@ -176,7 +176,7 @@
     </div>
 
     <button id="themeToggler" class="theme-toggler" onclick="toggleTheme();">
-      <i class="fas fa-cog fa-spin" style="--fa-animation-duration: 15s !important;"></i>
+      <i class="fas fa-cog fa-spin"></i>
     </button>
     <script src="script.js"></script>
   </body>
